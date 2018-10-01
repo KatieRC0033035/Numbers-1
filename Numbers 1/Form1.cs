@@ -31,5 +31,18 @@ namespace Numbers_1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string st = "3.2";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
+        }
     }
 }
